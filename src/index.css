@@ -1,0 +1,50 @@
+@import "modern-normalize/modern-normalize.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-VariableFont_opsz_wght.woff2) format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply font-sans leading-6 text-main bg-white dark:bg-main-dark dark:text-text-dark m-0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    @apply m-0;
+  }
+
+  ul,
+  ol {
+    @apply m-0 p-0 list-none;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+
+  button {
+    @apply cursor-pointer outline-none border-0 bg-transparent;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  #root {
+    @apply p-0;
+  }
+}
